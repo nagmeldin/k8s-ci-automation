@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:        
       - name: Checkout code
-        uses: docker/login-action@v2
+        uses: actions/login-action@v2
         
       - name: Run Super-Linter built-in feature
         uses: github/super-linter@v3
