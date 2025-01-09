@@ -1,13 +1,9 @@
-name: 01 Initial Docker Build
+name: 00 Super-Linter
 # This is basic workflow
 # @author: Nagm Eldin
 # @Date: 01.07.2025
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
+on: push
 
 jobs:
   super-lint:
@@ -15,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:        
       - name: Checkout code
-        uses: actions/login-action@v2
+        uses: actions/checkout@v2
         
-      - name: Run Super-Linter built-in feature
+      - name: Run Super-Linter
         uses: github/super-linter@v3
         env:
           DEFAULT_BRANCH: main
