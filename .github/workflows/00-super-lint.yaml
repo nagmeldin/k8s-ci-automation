@@ -17,4 +17,4 @@ jobs:
         uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: main
-          USER_TOKEN: ${{ secrets.NAGMELDIN_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.NAGMELDIN_TOKEN }} 
